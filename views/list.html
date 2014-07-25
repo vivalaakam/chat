@@ -1,0 +1,22 @@
+<div class='tab-navigation'>
+    <ul class='navigation'>
+        <li class='active'>
+            <a href='#/chat/list' class='link'>Список сообщений</a>
+        </li>
+        <li data-ng-repeat='tab in tabs'>
+            <a href='#/chat/{{tab.id}}' class='link' >{{tab.name}}</a>
+            <a href='#' class='delete'>
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class='list-group'>
+    <div class="list-group-item chat_item" data-ng-repeat='row in list'>
+        <div><a href='#/chat/{{row.id}}'>{{row.name}}</a></div>
+        <span class="label label-success status" data-ng-show='row.status == "online"'>Online</span>
+        <div>
+            {{row.message.text}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+[
+    {
+        "id": 2,
+        "name": "Лев Сорокин",
+        "login": "lsorokin",
+        "status": "online"
+    },
+    {
+        "id": 3,
+        "name": "Руслан Щербаков",
+        "login": "rsherbakov",
+        "active": "1",
+        "message": {
+            "text": "aaaaaaa",
+            "type": "in"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Никита шилов",
+        "login": "nshilov",
+        "status": "online"
+    }, {
+        "id": 11,
+        "name": "Елена Пономарева",
+        "login": "eponomareva"
+    },
+    {
+        "id": 17,
+        "name": "Анджела шубина",
+        "login": "ashubina",
+        "status": "online",
+        "active": 1
+    },
+    {
+        "id": 18,
+        "name": "Юлия Александрова",
+        "login": "ualeksandrova"
+    }
+]

@@ -1,0 +1,26 @@
+<div class='tab-navigation'>
+    <ul class='navigation'>
+        <li >
+            <a href='#/chat/list' class='link'>Список сообщений</a>
+        </li>
+        <li data-ng-repeat='tab in tabs' data-ng-class="{active : tab.id == active}" >
+            <a href='#/chat/{{tab.id}}' class='link' data-ng-class='{active: tab.id == active}'>{{tab.name}}</a>
+            <a href='#' class='delete' data-ng-class='{active: tab.id == active}' data-ng-click='close(tab.id) ; $event.preventDefault();'>
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="messages">
+    <div data-ng-repeat="message in dialog.dialog" class='{{message.type}}'>
+        {{message.text}}
+    </div>
+</div>
+<div class='message'>
+    <div class="form-group">
+        <textarea data-ng-model='dialog.message' class="form-control" ></textarea>
+    </div>
+    <div class="form-group">
+        <button data-ng-click='save()' class='btn btn-success'>Отправить</button>
+    </div>
+</div>

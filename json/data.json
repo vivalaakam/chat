@@ -1,0 +1,38 @@
+[
+    {
+        "id": 17,
+        "name": "Анджела шубина",
+        "dialog": [
+            {
+                "text": "aaa",
+                "type": "in"
+            },
+            {
+                "text": "bbb",
+                "type": "out"
+            },
+            {
+                "text": "ccc",
+                "type": "in"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Руслан Щербаков",
+        "dialog": [
+            {
+                "text": "abc",
+                "type": "out"
+            },
+            {
+                "text": "bcd",
+                "type": "in"
+            },
+            {
+                "text": "cde",
+                "type": "out"
+            }
+        ]
+    }
+]
