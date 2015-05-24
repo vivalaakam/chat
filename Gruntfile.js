@@ -62,7 +62,8 @@ module.exports = function(grunt) {
         copy: {
             main: {
                 files: [{
-                  expand: true, flatten: true,
+                    expand: true,
+                    flatten: true,
                     src: ['bower_components/bootstrap/fonts/**'],
                     dest: 'public/fonts',
                     filter: 'isFile',
