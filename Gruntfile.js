@@ -21,9 +21,10 @@ module.exports = function(grunt) {
                     livereload: true
                 },
                 files: [ // Files to livereload on
-                    "app/js/*.js",
-                    "app/templates/*.html"
-                ]
+                    "app/*.js",
+                    "views/*.html"
+                ],
+                tasks: ['html2js', 'concat'],
             }
         },
         less: {

@@ -18,5 +18,4 @@ var app = angular.module('chat', ['ngRoute' , 'templates-dist'])
 
             }])
         .run(['$rootScope', 'Chat', function($rootScope, Chat) {
-                Chat.load();
             }]);
