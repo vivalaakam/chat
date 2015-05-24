@@ -1,0 +1,10 @@
+node_modules
+uploads
+bower_components
+test
+tmp
+public/fonts
+public/javascripts
+public/stylesheets
+tests
+.DS_Store

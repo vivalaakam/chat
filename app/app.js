@@ -1,4 +1,4 @@
-var app = angular.module('chat', ['ngRoute'])
+var app = angular.module('chat', ['ngRoute' , 'templates-dist'])
         .config(['$routeProvider', '$locationProvider', '$httpProvider',
             function($routeProvider, $locationProvider, $httpProvider) {
                 $routeProvider
@@ -18,7 +18,5 @@ var app = angular.module('chat', ['ngRoute'])
 
             }])
         .run(['$rootScope', 'Chat', function($rootScope, Chat) {
-
                 Chat.load();
-
             }]);
